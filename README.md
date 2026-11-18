@@ -3,7 +3,7 @@
 How I set up AI coding agents so that their work can be checked.
 
 I am an environmental engineer, not a software engineer by training. I use
-[Claude Code](https://claude.com/claude-code) every day for study, research and my own notes.
+[Claude Code](https://claude.com/claude-code) every day.
 In life cycle assessment and energy modelling, an unsourced number quietly becomes a
 result, so most of what is here exists to stop that: rules the agent reads, small helper
 agents sized for the job, and a fixed way of reporting what was checked.
