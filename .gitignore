@@ -1,0 +1,13 @@
+# Secrets and local settings
+.env*
+*.key
+settings.local.json
+
+# Never tracked
+confidential/
+data/
+
+# Noise
+__pycache__/
+.DS_Store
+node_modules/
