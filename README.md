@@ -36,6 +36,9 @@ docs/
   verified-block.md    the report every larger task ends with
 ```
 
+Two hooks that enforce these rules (no credentials in commits, no long turn without a
+Verified block) live in their own repo: [claude-guardrail-hooks](https://github.com/batutho-dot/claude-guardrail-hooks).
+
 ## Use one
 
 The worker agents are plain Markdown files. Copy the `agents/` folder into `.claude/agents/`
@@ -47,7 +50,6 @@ out of reach.
 
 - Skills for my own field: life cycle assessment and GIS work with an agent
 - The check that stops a reply when code changed since its last passing test
-- One or two of the scripts (hooks) that enforce the rules above
 - A write-up of the notes system these run in: sources nobody edits, compiled pages where
   every claim carries its source, practice kept apart from results
 
