@@ -147,7 +147,7 @@ A check that only confirms the happy path builds false trust. What I do to break
   breakage in code the diff does not touch, and proves the one fact the change is safe
   because of by running real code.
 - **A boundary case per skill.** Each skill test includes the case the skill must refuse or
-  stop on. See [skills.md](skills.md).
+  stop on. See [skills](../skills/).
 - **The judge is a different model from the runner.** A model does not grade its own run.
 - **Blind runs.** A test runs in a fresh throwaway copy with no hints, so the agent cannot
   tell it is a test and nothing it writes reaches the real files.

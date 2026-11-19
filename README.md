@@ -7,11 +7,7 @@ rules behind them. General versions, cleaned of anything private.
 
 ## Use it
 
-One skill, straight into your skills folder (the others: [skills/README.md](skills/README.md)):
-
-```bash
-curl --create-dirs -o ~/.claude/skills/code-map/SKILL.md https://raw.githubusercontent.com/batutho-dot/ai-toolkit/main/skills/code-map/SKILL.md
-```
+A skill: open its folder in [skills/](skills/). Its page has the one command to get it.
 
 The worker agents: copy `agents/` into `.claude/agents/` in a project (or `~/.claude/agents/`
 for every project) and start Claude Code. Each file names a folder the worker must never
@@ -21,7 +17,7 @@ open; change it to yours.
 
 | Folder | What | Start with |
 |---|---|---|
-| [skills/](skills/) | `code-map`, `create-verify`, `lean-claude`, `librarian`, `lint`. One folder each | [skills/README.md](skills/README.md) |
+| [skills/](skills/) | `code-map`, `create-verify`, `lean-claude`, `librarian`, `lint` | [skills/](skills/) |
 | [agents/](agents/) | Three workers on three model sizes: light, standard, heavy | [docs/model-tiers.md](docs/model-tiers.md) |
 | [docs/](docs/) | The thinking behind it | below |
 
@@ -37,7 +33,7 @@ open; change it to yours.
   long as the agent remembers it. [docs/rules.md](docs/rules.md).
 - **Skills start from a failure I watched** and get three test cases. How I make them, and
   which skills by Lauren Tan and Matt Pocock I use, when, and how often:
-  [docs/skills.md](docs/skills.md).
+  [skills/](skills/).
 
 ## Credit and licence
 
