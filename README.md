@@ -24,6 +24,27 @@ that is only written down holds only as long as the agent remembers it.
 | The decision stays with a person | The agent picks a method that changes a result and nobody notices | Workers hand such choices back as options with trade-offs | [agents/](agents/) |
 | Confidential files stay out of reach | Private material is sent to a helper agent or an outside service | Workers are told never to open the confidential folder; in my own setup a script also refuses the hand-off | [agents/](agents/) |
 
+## The trust ladder
+
+How much I let an agent do is decided per step, not per model. A step climbs one level
+only when a check exists that fails on a planted bad case, the step ran 10 times in a row
+with no correction from me, and it can be undone. Most of my steps sit at level 1 or 2
+today. The full picture, including who builds, who validates, why the check exists before
+the build and how I stress test: [docs/trust-ladder.md](docs/trust-ladder.md).
+
+## Skills
+
+A skill is a Markdown file that tells the agent how to do one kind of task. Mine start
+from a failure I watched, get three test cases (trigger, core steps, boundary) and are
+judged by a different model from the one that ran them. How I make them and the full list
+with credits: [docs/skills.md](docs/skills.md).
+
+| Group | Skills |
+|---|---|
+| My own | `create-verify`, `code-map`, `lint`, `librarian`, `lean-claude` |
+| Adapted from [pstack](https://github.com/michael-denyer/pstack-claude) by Lauren Tan | `blast-radius`, `explain-change`, `ketchup`, `sharpen`, `decision-log`, `reflect`, `correct` |
+| From [mattpocock/skills](https://github.com/mattpocock/skills) by Matt Pocock | `teach`, `research`, `retro` |
+
 ## What is here
 
 ```
@@ -32,6 +53,8 @@ agents/
   worker-standard.md   multi-step work with a clear goal; mid-size model
   worker-heavy.md      hard, self-contained problems; largest model
 docs/
+  trust-ladder.md      how much I let an agent do, and what moves a step up or down
+  skills.md            the skills I use and how I make my own
   model-tiers.md       which work goes to which worker, and when to go one up
   verified-block.md    the report every larger task ends with
 ```
@@ -46,17 +69,10 @@ in a project (or `~/.claude/agents/` for every project), then start Claude Code.
 appear under those names. Change `confidential/` in each file to the folder you want kept
 out of reach.
 
-## Coming next
-
-- Skills for my own field: life cycle assessment and GIS work with an agent
-- The check that stops a reply when code changed since its last passing test
-- A write-up of the notes system these run in: sources nobody edits, compiled pages where
-  every claim carries its source, practice kept apart from results
-
 ## Credit
 
-I write these together with Claude Code. The notes system follows Andrej Karpathy's LLM
-Wiki pattern, in the layout of the `nashsu/llm_wiki` project. In my private setup I also use
+I write these together with Claude Code. The trust ladder is Lauren Tan's idea. The notes
+system follows Andrej Karpathy's LLM Wiki pattern, in the layout of the `nashsu/llm_wiki` project. In my private setup I also use
 and adapt skills by Lauren Tan (`pstack`), Matt Pocock (`mattpocock/skills`) and Anthropic
 (`anthropics/skills`); those are theirs and are not copied here.
 
