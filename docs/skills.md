@@ -48,34 +48,49 @@ Written by me together with Claude Code. Each one is its own folder in
 
 `create-verify` borrows its feature map step from pstack (below).
 
-## Adapted from pstack, by Lauren Tan
+## Skills from others, and when I use them
+
+Two people's work is part of my daily workflow, and I want that visible. The counts are
+real: calls in 298 Claude Code sessions on one machine, 8 October to 19 November 2026,
+counted by a script over the session logs. A count of 0 means installed and never called
+by name in that period.
+
+### From pstack, by Lauren Tan
 
 [pstack](https://github.com/michael-denyer/pstack-claude) is Lauren Tan's set of skills and
-principles (MIT). I use the Claude Code version linked here. These are my adaptations, cut
-down and fitted to my rules. They are hers in idea.
+principles (MIT). I use Michael Denyer's Claude Code version, linked here. Mine are
+adaptations: cut down and fitted to my rules. The ideas are hers.
 
-| My skill | From | What I changed |
+| My skill | Her skill | When I use it | Calls |
+|---|---|---|---|
+| `explain-change` | `in-your-own-words` | Before any change to code I answer for. The agent writes a plain note, then stops for my yes | 33, in 30 sessions |
+| `ketchup` | `ketchup` | When I come back to a long session and need what changed and which decisions wait on me | 17 |
+| `blast-radius` | `blast-radius` | After the explanation, before the build: what could this break outside the diff | 3 |
+| `create-verify` (one step) | `create-verification-skill` | Setting up a repo's verify script. The feature map step is hers, the rest is mine | 9 |
+| `sharpen` | `sharpen` | To make a task deeper before starting it | 0 |
+| `decision-log` | `show-me-your-work` | One row per decision on long runs | 0 |
+| `reflect`, `correct` | `reflect`, `correct` | Turning repeated corrections into a check or a rule. Their routine runs inside my weekly review, not by name | 0 |
+
+### From Matt Pocock
+
+[mattpocock/skills](https://github.com/mattpocock/skills) (MIT). I use these close to the
+original, with a short section of my own rules added at the end of some.
+
+| Skill | When I use it | Calls |
 |---|---|---|
-| `blast-radius` | `blast-radius` | Runs between the explanation of a change and its build |
-| `explain-change` | `in-your-own-words` | Writes a plain note before the build and stops for my yes |
-| `ketchup` | `ketchup` | Catches me up on a long session and lists the decisions waiting on me |
-| `sharpen` | `sharpen` | Any outside check it adds must be traceable to a source |
-| `decision-log` | `show-me-your-work` | One row per decision with reason and evidence, for long runs |
-| `reflect` | `reflect` | Cut down to run in the main session |
-| `correct` | `correct` | Turns repeated corrections into structure or a check before a written rule |
+| `handoff` | When a session's context gets long. A hook tells the agent to write the hand-over document before the context is compacted, so nothing is lost | 75, in 58 sessions |
+| `grilling` | Before a plan or decision locks: the agent interviews me until the open questions are found | 22, in 15 sessions |
+| `improve-codebase-architecture` | When a codebase needs restructuring, not just a fix | 9 |
+| `codebase-design` | Designing a module's interface before writing it | 5 |
+| `writing-for-agents` | Whenever I write or edit a skill or an instructions file | 4 |
+| `teach` | Learning a topic over several sessions | 1 |
+| `research`, `retro`, `diagnosing-bugs`, `domain-modeling`, `wait-what` | Installed for docs research, session retrospectives, hard bugs, a shared glossary and "say that again, plainly" | 0 |
 
-## From Matt Pocock
+What the counts say: `handoff`, `explain-change` and `grilling` carry most of my sessions,
+and all three come from these two people. Half of what I installed I never called. Those
+get a better trigger or get parked.
 
-[mattpocock/skills](https://github.com/mattpocock/skills) (MIT). Used close to the
-original, with a short section of my own rules added at the end of each.
-
-| Skill | What I use it for |
-|---|---|
-| `teach` | Learning a topic over several sessions |
-| `research` | Docs and API facts from primary sources |
-| `retro` | A look back at a coding session, ending in proposed changes to the setup |
-
-## Others
+### Others
 
 `verify-this` is adapted from Cursor's team kit (MIT). I also use skills from Anthropic's
 [anthropics/skills](https://github.com/anthropics/skills). None of the third-party files

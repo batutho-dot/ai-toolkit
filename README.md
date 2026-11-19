@@ -36,7 +36,8 @@ open; change it to yours.
 - **Every rule has a mechanism,** because a rule that is only written down holds only as
   long as the agent remembers it. [docs/rules.md](docs/rules.md).
 - **Skills start from a failure I watched** and get three test cases. How I make them, and
-  the ones I use from others: [docs/skills.md](docs/skills.md).
+  which skills by Lauren Tan and Matt Pocock I use, when, and how often:
+  [docs/skills.md](docs/skills.md).
 
 ## Credit and licence
 
