@@ -50,6 +50,65 @@ terms:
 | Method choice | 5 | Never delegated | Stays |
 | Sending a message | 5 | Never delegated | Stays |
 
+## Progress
+
+The register has 11 recurring steps. This is where they stood when I set the starting
+levels (31 October 2026). I redraw the chart when a step moves.
+
+```mermaid
+xychart-beta
+    title "Recurring steps per trust level (31 October 2026)"
+    x-axis ["0 I do it", "1 Drafts", "2 Verifies", "3 Review after", "4 Triggered"]
+    y-axis "Steps" 0 --> 8
+    bar [0, 7, 2, 0, 0]
+```
+
+| Level | Steps | Which |
+|---|---|---|
+| 1 Agent drafts | 7 | Review draft, inbox sorting, reading a source into notes, literature search, calculation from an inventory, prose for a reader, a data list for a colleague |
+| 2 Agent does and verifies | 2 | Linter fixes, code change in a repo with a verify script |
+| 3 Review after | 0 | |
+| 4 Triggered | 0 | |
+| 5 Never delegated | 2 | Method choice, sending a message. These stay here on purpose and are not in the chart |
+
+The goal is not to push everything to level 4. It is to move the boring, checkable steps
+up and keep the decisions with me.
+
+## The structure: one loop for every task
+
+Every task runs through the same seven stations. Trust is built at stations 5 and 7.
+
+```mermaid
+flowchart LR
+    F[1 Frame<br/>outcome and<br/>done conditions] --> O[2 Orient<br/>read the map<br/>and the terms]
+    O --> P[3 Plan<br/>small steps,<br/>each with a check]
+    P --> D[4 Do<br/>worker on the<br/>right model size]
+    D --> V[5 Verify<br/>run the real thing]
+    V --> S[6 Ship<br/>one commit,<br/>Verified block]
+    S --> L[7 Learn<br/>correction becomes<br/>a check or a rule]
+    L -.-> F
+```
+
+Stations 2 and 7 are my weak ones. Station 2 needs a map and a word list per project so
+the agent does not search blind. Station 7 is the loop that turns my corrections into
+fixes, and it only runs when something other than my memory starts it.
+
+## The plan to climb
+
+In this order. A step is marked done only where it is built and has run.
+
+| # | Step | Why this one | State |
+|---|---|---|---|
+| 1 | Set a starting level for every recurring step | Without a register there is nothing to move | Done |
+| 2 | Make the weekly review read the week's corrections and propose fixes and level moves | The learning loop needs a trigger that is not me | Built. Has run at one review so far |
+| 3 | Boring work first: linter fixes, inbox sorting, the review draft | Checkable, undoable, low cost if wrong | Next. Linter fixes are at level 2 and need 10 clean runs for level 3 |
+| 4 | One card per project: map, terms, steps, checks, levels | Fixes station 2 | Not started |
+| 5 | One check per kind of knowledge work: recompute a figure from its inputs, confirm a cited page opens | Without a check a step cannot leave level 1 | Not started |
+| 6 | Put steps that held at level 3 for weeks on a schedule | This is level 4 | Not started |
+
+What would make me change the plan: if four weekly reviews pass with the loop running and
+my corrections per session do not fall, the fixes are too soft and the routing is wrong.
+
 ## What builds, what validates
 
 | Job | Who does it | Why |

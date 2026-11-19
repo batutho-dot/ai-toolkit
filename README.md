@@ -27,8 +27,9 @@ that is only written down holds only as long as the agent remembers it.
 How much I let an agent do is decided per step, not per model. A step climbs one level
 only when a check exists that fails on a planted bad case, the step ran 10 times in a row
 with no correction from me, and it can be undone. Most of my steps sit at level 1 or 2
-today. The full picture, including who builds, who validates, why the check exists before
-the build and how I stress test: [docs/trust-ladder.md](docs/trust-ladder.md).
+today. The full picture, with a progress chart, my plan to climb, who builds, who validates,
+why the check exists before the build and how I stress test:
+[docs/trust-ladder.md](docs/trust-ladder.md).
 
 ## Skills
 
