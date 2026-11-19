@@ -161,7 +161,7 @@ A check that only confirms the happy path builds false trust. What I do to break
 A written rule holds only while the agent remembers it. So every rule I set sits on a
 ladder: written only, then a skill, then a check, then a hook or the structure itself. When
 I correct the same thing twice, that rule is the next to move up. The
-[README table](../README.md#why-these-exist) shows the rules that already have a mechanism.
+[rules table](rules.md) shows the rules that already have a mechanism.
 
 ## What does not work yet
 
