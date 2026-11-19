@@ -1,15 +1,13 @@
 # ai-toolkit
 
-How I set up AI coding agents so that their work can be checked.
+How I work with AI as a teammate: it earns more responsibility as it proves itself.
 
-I am an environmental engineer, not a software engineer by training. I use
-[Claude Code](https://claude.com/claude-code) every day.
-In life cycle assessment and energy modelling, an unsourced number quietly becomes a
-result, so most of what is here exists to stop that: rules the agent reads, small helper
-agents sized for the job, and a fixed way of reporting what was checked.
+I use [Claude Code](https://claude.com/claude-code) every day. In my field an unsourced
+number quietly becomes a result, so I check first and trust after. This repo is the setup
+behind that: a few rules, small helper agents sized for the job, and one fixed way for the
+agent to report what it checked.
 
-This repo holds the general parts of that setup, cleaned of anything private. It grows one
-piece at a time.
+It holds the general parts, cleaned of anything private, and grows one piece at a time.
 
 ## Why these exist
 
