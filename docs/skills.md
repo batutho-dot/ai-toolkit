@@ -35,15 +35,16 @@ that ran them. Those results are marked as not independent.
 
 ## My own skills
 
-Written by me together with Claude Code. Listed, not published.
+Written by me together with Claude Code. Each one is its own folder in
+[skills/](../skills/), so you can take one without the rest.
 
 | Skill | What it does |
 |---|---|
-| `create-verify` | Writes the verify script for a repo: real run on a fixed input, compared to a known-good output, proven on a planted break |
-| `code-map` | Draws a program's steps as a diagram, each box tied to file and line, so I see the shape of code before its lines |
-| `lint` | Runs the checker over my notes (links, page shape, sources), proposes fixes and applies only the ones I approve |
-| `librarian` | Tidies the notes and checks that changes the agent reported really landed |
-| `lean-claude` | Shrinks the always-loaded instruction files without losing a rule, proven with a rule map and test prompts |
+| [`create-verify`](../skills/create-verify/) | Writes the verify script for a repo: real run on a fixed input, compared to a known-good output, proven on a planted break |
+| [`code-map`](../skills/code-map/) | Draws a program's steps as a diagram, each box tied to file and line, so I see the shape of code before its lines |
+| [`lint`](../skills/lint/) | Runs the checker over my notes (links, page shape, sources), proposes fixes and applies only the ones I approve |
+| [`librarian`](../skills/librarian/) | Tidies the notes and checks that changes the agent reported really landed |
+| [`lean-claude`](../skills/lean-claude/) | Shrinks the always-loaded instruction files without losing a rule, proven with a rule map and test prompts |
 
 `create-verify` borrows its feature map step from pstack (below).
 

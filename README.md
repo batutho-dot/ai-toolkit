@@ -40,7 +40,7 @@ with credits: [docs/skills.md](docs/skills.md).
 
 | Group | Skills |
 |---|---|
-| My own | `create-verify`, `code-map`, `lint`, `librarian`, `lean-claude` |
+| My own, one folder each in [skills/](skills/) | [`create-verify`](skills/create-verify/), [`code-map`](skills/code-map/), [`lint`](skills/lint/), [`librarian`](skills/librarian/), [`lean-claude`](skills/lean-claude/) |
 | Adapted from [pstack](https://github.com/michael-denyer/pstack-claude) by Lauren Tan | `blast-radius`, `explain-change`, `ketchup`, `sharpen`, `decision-log`, `reflect`, `correct` |
 | From [mattpocock/skills](https://github.com/mattpocock/skills) by Matt Pocock | `teach`, `research`, `retro` |
 
@@ -51,6 +51,12 @@ agents/
   worker-light.md      one small, checkable job; smallest model
   worker-standard.md   multi-step work with a clear goal; mid-size model
   worker-heavy.md      hard, self-contained problems; largest model
+skills/
+  code-map/           draw a program's steps as a diagram
+  create-verify/      write a repo's verify script
+  lean-claude/        shrink the instruction files without losing a rule
+  librarian/          tidy a Markdown vault
+  lint/               run a wiki's lint script and fix what is approved
 docs/
   trust-ladder.md      how much I let an agent do, and what moves a step up or down
   skills.md            the skills I use and how I make my own
@@ -63,6 +69,10 @@ Verified block) live in their own repo: [claude-guardrail-hooks](https://github.
 
 ## Use one
 
+Each skill is its own folder, so you can download one without the rest:
+[skills/README.md](skills/README.md) has the one-line commands.
+
+
 The worker agents are plain Markdown files. Copy the `agents/` folder into `.claude/agents/`
 in a project (or `~/.claude/agents/` for every project), then start Claude Code. The agents
 appear under those names. Change `confidential/` in each file to the folder you want kept
@@ -74,5 +84,10 @@ I write these together with Claude Code. The trust ladder is Lauren Tan's idea. 
 system follows Andrej Karpathy's LLM Wiki pattern, in the layout of the `nashsu/llm_wiki` project. In my private setup I also use
 and adapt skills by Lauren Tan (`pstack`), Matt Pocock (`mattpocock/skills`) and Anthropic
 (`anthropics/skills`); those are theirs and are not copied here.
+
+The feature map step in `create-verify` is adapted from pstack's `create-verification-skill`
+(MIT licence, copyright 2026 Lauren Tan and 2026 Michael Denyer, whose Claude Code port I
+use). `code-map` borrows the idea of zoom levels from Simon Brown's C4 model. `lint` and
+`librarian` work on the LLM Wiki pattern.
 
 No licence file yet. Until one is added, please ask before reusing.
